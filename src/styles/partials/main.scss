@@ -1,0 +1,38 @@
+.wrapper {
+	overflow: hidden;
+	height: 100vh;
+	background: url('../images/general-bg.png') 0 0 / 100% 100% no-repeat;
+	padding-bottom: 40px;
+	@media (max-width: 800px){
+		padding-bottom: 15vw;
+	}
+	.side-text {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 67px;
+		background: url('../images/side-text.png') 0 0 / 100% 100% no-repeat;
+		@media (max-width: 1920px){
+			width: 3.49vw;
+		}
+		@media (max-width: 800px){
+			top: auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: auto;
+			height: 12.50vw;
+			background: url('../images/side-text-mob.png') 0 0 / 100% 100% no-repeat;
+		}
+	}
+}
+.container {
+	width: 1920px;
+	max-width: 100%;
+	margin: 0 auto;
+	@media (max-width: 1920px){
+		width: 100vw;
+	}
+}

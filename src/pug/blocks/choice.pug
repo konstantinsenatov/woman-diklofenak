@@ -1,0 +1,22 @@
+.choice
+	.side-text
+	.choice__container.container 
+		.choice__header 
+			.choice__header-side.choice__header-side--left 
+				span «
+				|Отмазки
+				span »
+			.choice__miggle 
+				.choice__text Мы собрали все (ну или почти все) «отмазки» от того, чтобы пойти на тренировку сегодня. Жмите «идти», если причина, чтобы прогулять тренировку неуважительная, и «не идти», если подобное способно заставить вас пропустить занятие.
+				.choice__subtitle — перетяни карточку влево, если это плохая отмазка, или вправо — если это не отмазка —
+			.choice__header-side.choice__header-side--right 
+				span «
+				|НЕ Отмазки
+				span »
+		.choice__content
+			.swiper-outer-pagination
+			.choice__content-img.choice__content-left 
+				img(src="images/choice/girl-left.png", alt="alt")
+			.choice__content-img.choice__content-right 
+				img(src="images/choice/girl-right.png", alt="alt")
+			include ../partials/cards-swipe

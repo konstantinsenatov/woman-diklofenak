@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Glober';
+	src: url('../fonts/GloberxBold/GloberxBold.eot');
+	src: local('GloberxBold'), local('../fonts/GloberxBold/GloberxBold'),
+		url('../fonts/GloberxBold/GloberxBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GloberxBold/GloberxBold.woff') format('woff'),
+		url('../fonts/GloberxBold/GloberxBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Glober';
+	src: url('../fonts/GloberBold/GloberBold.eot');
+	src: local('GloberBold'), local('../fonts/GloberBold/GloberBold'),
+		url('../fonts/GloberBold/GloberBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GloberBold/GloberBold.woff') format('woff'),
+		url('../fonts/GloberBold/GloberBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Glober';
+	src: url('../fonts/GloberRegular/GloberRegular.eot');
+	src: local('GloberRegular'), local('../fonts/GloberRegular/GloberRegular'),
+		url('../fonts/GloberRegular/GloberRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GloberRegular/GloberRegular.woff') format('woff'),
+		url('../fonts/GloberRegular/GloberRegular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

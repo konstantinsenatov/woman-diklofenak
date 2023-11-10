@@ -1,0 +1,340 @@
+.hero {
+	overflow: hidden;
+	height: 100vh;
+	min-width: 100vw;
+	padding: 65px 0 135px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.5s ease 0s;
+	transform: translate(0, -100%);
+	@media (max-width: 1920px){
+		padding: 3.39vw 0 7.03vw;
+	}
+	@media (max-width: 800px){
+		padding: 0;
+		position: relative;
+	}
+	&.js-active {
+		transform: translate(0, 0);
+	}
+	&__arrow  {
+		cursor: pointer;
+		animation: hero__button 1s ease infinite;
+		position: absolute;
+		z-index: 9;
+		left: 50%;
+		bottom: 50px;
+		transform: translate(-50%, 0) rotate(-90deg);
+		width: 50px;
+		height: 50px;
+		background: url('../images/hero/arrow.png') 0 0 / 100% 100% no-repeat;
+		@media (max-width: 1920px){
+			width: 2.60vw;
+			height: 2.60vw;
+			bottom: 2.60vw;
+		}
+		@media (max-width: 800px){
+			width: 6.25vw;
+			height: 6.25vw;
+			bottom: 6.25vw;
+		}
+	}
+	@keyframes hero__button {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(0.6);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	&__container {
+	}
+	&__header {
+		padding: 0 77px;
+		@media (max-width: 1920px){
+			padding: 0 4.01vw;
+		}
+		@media (max-width: 800px){
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			top: 4vw;
+			left: 0;
+			right: 0;
+		}
+		span {
+			font-family: 'Glober';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 15px;
+			color: #FFFFFF;
+			@media (max-width: 1920px){
+				font-size: 0.83vw;
+				line-height: 0.78vw;
+			}
+			@media (max-width: 800px){
+				font-size: 2vw;
+				line-height: 1.88vw;
+			}
+		}
+		img {
+			width: 260px;
+			height: 60px;
+			margin-top: 12px;
+			@media (max-width: 1920px){
+				width: 13.54vw;
+				height: 3.13vw;
+				margin-top: 0.63vw;
+			}
+			@media (max-width: 800px){
+				width: 32.50vw;
+				height: 7.50vw;
+				margin-top: 1.50vw;
+			}
+		}
+	}
+	&__row {
+		display: flex;
+	}
+	&__left {
+		flex: 0 1 33.333%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+		@media (max-width: 800px){
+			position: absolute;
+			bottom: 0;
+			left: -15vw;
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(0deg);
+			width: 560px;
+			height: 590px;
+			background: url('../images/hero/girl-left-bg.svg') 0 0 / 100% 100% no-repeat;
+			@media (max-width: 1920px){
+				width: 29.17vw;
+				height: 30.73vw;
+			}
+			@media (max-width: 800px){
+				width: 55.17vw;
+				height: 55.73vw;
+				transform: translate(-50%, -50%) rotate(120deg);
+			}
+		}
+		img {
+			width: 440px;
+			height: 655px;
+			@media (max-width: 1920px){
+				width: 22.92vw;
+				height: 34.11vw;
+			}
+			@media (max-width: 800px){
+				width: 36vw;
+				height: 50vw;
+			}
+		}
+	}
+	&__middle {
+		flex: 0 1 33.333%;
+		@media (max-width: 800px){
+			flex: 1 1 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			position: relative;
+			z-index: 3;
+		}
+		&-container {
+			padding: 15px 0;
+			position: relative;
+			transform: rotate(-10deg);
+			@media (max-width: 1920px){
+				padding: 0.78vw 0;
+			}
+			@media (max-width: 800px){
+				padding: 0;
+				margin: 0;
+				max-width: 70%;
+			}
+		}
+	}
+	&__button  {
+		position: absolute;
+		top: -60px;
+		right: 0;
+		width: 182px;
+		height: 182px;
+		@media (max-width: 1920px){
+			top: -3.13vw;
+			width: 9.48vw;
+			height: 9.48vw;
+		}
+		@media (max-width: 800px){
+			top: -3.13vw;
+			width: 22.75vw;
+			height: 22.75vw;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__lines {
+		position: absolute;
+		width: 228px;
+		height: 375px;
+		@media (max-width: 1920px){
+			width: 11.88vw;
+			height: 19.53vw;
+		}
+		@media (max-width: 800px){
+			width: 23.50vw;
+			height: 406.88vw;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		&--top {
+			top: 0;
+			left: 60px;
+			transform: translate(0, -100%);
+			@media (max-width: 1920px){
+				left: 3.13vw;
+			}
+			@media (max-width: 800px){
+				left: 0;
+			}
+		}
+		&--bottom {
+			right: 0;
+			bottom: 0;
+			transform: translate(0, 100%);
+		}
+	}
+	&__title {
+		white-space: nowrap;
+		font-family: 'Glober';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 128px;
+		line-height: 92.97%;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		@media (max-width: 1920px){
+			font-size: 6.67vw;
+		}
+		@media (max-width: 800px){
+			font-size: 16vw;
+		}
+		span {
+			color: #D3006A;
+		}
+		&--align-right {
+			text-align: right;
+		}
+	}
+	&__text {
+		margin-top: 15px;
+		font-family: 'Glober';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 116.2%;
+		text-align: justify;
+		color: #FFFFFF;
+		@media (max-width: 1920px){
+			margin-top: 0.78vw;
+			font-size: 1.15vw;
+		}
+		@media (max-width: 800px){
+			margin-top: 2vw;
+			font-size: 2.75vw;
+		}
+	}
+	&__subtitle {
+		margin-top: 15px;
+		font-family: 'Glober';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 141.2%;
+		text-align: justify;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		@media (max-width: 1920px){
+			margin-top: 0.78vw;
+			font-size: 1.46vw;
+		}
+		@media (max-width: 800px){
+			margin-top: 2vw;
+			font-size: 3.50vw;
+		}
+	}
+	&__right {
+		flex: 0 1 33.333%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+		@media (max-width: 800px){
+			position: absolute;
+			top: 16vw;
+			right: -12vw;
+			transform: rotate(-30.26deg);
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(0deg);
+			width: 600px;
+			height: 630px;
+			background: url('../images/hero/girl-right-bg.svg') 0 0 / 100% 100% no-repeat;
+			@media (max-width: 1920px){
+				width: 31.25vw;
+				height: 32.81vw;
+			}
+			@media (max-width: 800px){
+				width: 51.25vw;
+				height: 52.81vw;
+				transform: translate(-50%, -50%) rotate(65deg);
+			}
+		}
+		img {
+			width: 360px;
+			height: 640px;
+			@media (max-width: 1920px){
+				width: 18.75vw;
+				height: 33.33vw;
+			}
+			@media (max-width: 800px){
+				width: 32.75vw;
+				height: 62.33vw;
+			}
+		}
+	}
+}
